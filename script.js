@@ -24,14 +24,14 @@ function heroHTML() {
   return `
     <section class="hero-view" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">FILE NO. 001 <span class="small-arrow">↗</span> ORIGINALITY CHECK</p>
+        <p class="eyebrow">FILE NO. 001 <span class="small-arrow">></span> ORIGINALITY CHECK</p>
         <h1 class="display" id="hero-title">FIND THE<br>ORIGINAL<span class="stop">.</span></h1>
         <p class="description">One file. Countless copies.<br>Which one came first?</p>
-        <button type="button" class="action-button" data-go="scan"><span>VERIFY THIS FILE</span><span aria-hidden="true">↗</span></button>
+        <button type="button" class="action-button" data-go="scan"><span>VERIFY THIS FILE</span><span aria-hidden="true">></span></button>
       </div>
       <div class="hero-artwork">
         <div class="art-mat">
-          <div class="art-index"><span>FIG. 01</span><span>FOLDER_001.PNG</span></div>
+          <div class="art-index"><span>SELECTED FILE</span><span>FOLDER_001.PNG</span></div>
           <img src="${folderImage}" class="main-folder" alt="Hand-drawn yellow folder representing a sample digital file">
           <div class="mat-bottom"><span>SELECTED FILE</span><span class="pixel-square" aria-hidden="true">■ ■ ■</span></div>
         </div>
@@ -75,7 +75,7 @@ function reportHTML(scanning) {
               <div class="data-row"><span class="data-label">FIRST CREATOR</span><span class="data-value uncertain">UNKNOWN</span></div>
               <div class="data-row"><span class="data-label">REGISTRATION</span><span class="data-value">AVAILABLE</span></div>
             </div>
-            <button class="action-button" type="button" data-go="certificate"><span>CLAIM ORIGINAL STATUS</span><span aria-hidden="true">↗</span></button>`}
+            <button class="action-button" type="button" data-go="certificate"><span>CLAIM ORIGINAL STATUS</span><span aria-hidden="true">></span></button>`}
         </div>
       </div>
     </section>`;
@@ -119,15 +119,15 @@ function certificateHTML(revealed) {
             <h2 class="reveal-title">CREATOR<br>UNKNOWN.</h2>
             <div class="reveal-message" role="status">
               <strong>REGISTRATION ACCEPTED.</strong>
-              <p>ORIGIN recorded the claim. The original creator remains unknown.</p>
+              <p>ORIGIN has successfully recorded the claim. Original creator is still unidentified.</p>
               <p>Who decides what makes an original?</p>
             </div>
-            <button class="action-button outline" type="button" data-go="home"><span>START AGAIN</span><span aria-hidden="true">↗</span></button>
+            <button class="action-button outline" type="button" data-go="home"><span>START AGAIN</span><span aria-hidden="true">></span></button>
           ` : `
             <p class="micro-label">REGISTRATION / APPROVED</p>
             <h2 class="reveal-title">OFFICIALLY<br>ORIGINAL.</h2>
             <p class="reveal-text">Your file has received original status. Inspect the certificate details.</p>
-            <button class="action-button" type="button" data-go="reveal"><span>INSPECT THE CERTIFICATE</span><span aria-hidden="true">↗</span></button>
+            <button class="action-button" type="button" data-go="reveal"><span>INSPECT THE CERTIFICATE</span><span aria-hidden="true">></span></button>
           `}
         </div>
       </div>
